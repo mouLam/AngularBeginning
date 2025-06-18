@@ -1,0 +1,30 @@
+<div class="navbar bg-base-100">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <a class="btn btn-ghost text-xl">
+        <div class="logo p-2" routerLink="/">SI Navbar</div>
+      </a>
+    </div>
+  </div>
+  <div class="navbar-center flex">
+    <div class="menu menu-sm sm:menu-lg sm:menu-horizontal px-1">
+      <li><a href="/">Home</a></li>
+      <li>
+        <details #productsMenu>
+          <summary>Products</summary>
+          <ul class="z-30">
+            <li><a href="/products">All</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details #adminMenu>
+          <summary>Admin</summary>
+          <ul class="z-30">
+            <li><a href="/products">All</a></li>
+          </ul>
+        </details>
+      </li>
+    </div>
+  </div>
+</div>
