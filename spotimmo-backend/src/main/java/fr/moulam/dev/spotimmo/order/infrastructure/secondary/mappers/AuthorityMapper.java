@@ -9,7 +9,7 @@ import org.mapstruct.Mapping;
 import java.util.List;
 import java.util.Set;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface AuthorityMapper {
 
     @Mapping(source = "authorityName.name", target = "name")
